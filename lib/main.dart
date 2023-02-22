@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:neon_colors/screens/home_screen.dart';
 import 'package:neon_colors/screens/onboarding_screen.dart';
 
 void main() {
@@ -11,10 +12,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Neon Colors',
       debugShowCheckedModeBanner: false,
-      home: OnboardingScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const OnboardingScreen(),
+        '/home': (context) => const HomeScreen(),
+      },
     );
   }
 }

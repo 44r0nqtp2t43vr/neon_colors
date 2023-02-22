@@ -50,7 +50,7 @@ class OnboardingItem extends StatelessWidget {
                       width: 200.0,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: kColorNeonBlueGreen.withOpacity(0.50),
+                        color: kColorNeonCyan.withOpacity(0.50),
                       ),
                       child: BackdropFilter(
                         filter: ImageFilter.blur(
@@ -93,7 +93,7 @@ class OnboardingItem extends StatelessWidget {
                           width: 80.0,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            color: kColorNeonBlueGreen.withOpacity(0.8),
+                            color: kColorNeonCyan.withOpacity(0.8),
                           ),
                           child: BackdropFilter(
                             filter: ImageFilter.blur(
@@ -120,7 +120,7 @@ class OnboardingItem extends StatelessWidget {
                           kColorNeonPink,
                           const Color(0xff9E95C4).withOpacity(0.02),
                           const Color(0xff6AB9CA).withOpacity(0.02),
-                          kColorNeonBlueGreen,
+                          kColorNeonCyan,
                         ],
                         stops: const [0.1, 0.4, 0.55, 1],
                       ),
@@ -184,7 +184,7 @@ class OnboardingItem extends StatelessWidget {
                       gradient: LinearGradient(
                         colors: [
                           kColorNeonPink,
-                          kColorNeonBlueGreen,
+                          kColorNeonCyan,
                         ],
                       ),
                       strokeWidth: 3,
@@ -198,11 +198,11 @@ class OnboardingItem extends StatelessWidget {
                           gradient: LinearGradient(
                             colors: [
                               kColorNeonPink.withOpacity(0.15),
-                              kColorNeonBlueGreen.withOpacity(0.15),
+                              kColorNeonCyan.withOpacity(0.15),
                             ],
                           ),
                         ),
-                        child: Center(
+                        child: const Center(
                           child: Text(
                             "Sign Up",
                             style: TextStyle(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 // colors
-Color kColorNeonBlueGreen = const Color(0xFF09FBD3);
+Color kColorNeonCyan = const Color(0xFF09FBD3);
 Color kColorNeonPink = const Color(0xFFFE53BB);
 Color kColorDot = const Color(0xFF08F7FE);
 Color kColorBackground = const Color(0xFF19191B);
@@ -16,3 +16,19 @@ const String kIconBack = 'assets/icons/icon_back.svg';
 const String kIconMenu = 'assets/icons/icon_menu.svg';
 const String kIconPlay = 'assets/icons/icon_play.svg';
 const String kIconPlus = 'assets/icons/icon_plus.svg';
+const String kIconSearch = 'assets/icons/icon_search.svg';
+const String kIconMicrophone = 'assets/icons/icon_microphone.svg';
+
+// images
+const String kMovieSpiderman = 'assets/images/poster_spiderman.png';
+const String kMovieMatrix = 'assets/images/poster_matrix.png';
+const String kMovieEternals = 'assets/images/poster_eternals.png';
+const String kMovieAquaman = 'assets/images/poster_aquaman.png';
+const String kMovieBatman = 'assets/images/poster_batman.png';
+const String kMovieSonic = 'assets/images/poster_sonic.png';
+
+// masks
+const String kMaskFirst = 'assets/masks/mask_first.png';
+const String kMaskMid = 'assets/masks/mask_mid.png';
+const String kMaskLast = 'assets/masks/mask_last.png';
+const String kMaskCast = 'assets/masks/mask_cast.png';

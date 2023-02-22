@@ -35,6 +35,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   outline_gradient_button: ^2.0.0+1
+  flutter_svg: ^2.0.1
 
 dev_dependencies:
   flutter_test:
@@ -62,6 +63,7 @@ flutter:
     - assets/fonts/
     - assets/icons/
     - assets/images/
+    - assets/masks/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -83,6 +85,9 @@ flutter:
     - family: Inter
       fonts:
         - asset: assets/fonts/Inter-Regular.ttf
+    - family: SFProText
+      fonts:
+        - asset: assets/fonts/SFProText-Regular.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

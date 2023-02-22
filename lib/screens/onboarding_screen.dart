@@ -16,6 +16,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Column(
         children: [
           Expanded(
@@ -48,6 +49,28 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         ),
                       ),
                     ),
+                  ),
+                  Positioned(
+                    bottom: 34.0,
+                    right: 48.0,
+                    child: _currentPage == onboardingScreenItems.length - 1
+                        ? GestureDetector(
+                            onTap: () {
+                              Navigator.pushNamed(context, '/home');
+                            },
+                            child: const Text(
+                              "Next",
+                              style: TextStyle(
+                                color: Color(0xffffffff),
+                                fontFamily: "OpenSans",
+                                fontWeight: FontWeight.w400,
+                                fontSize: 16.0,
+                                letterSpacing: 0.37,
+                                height: 1.36,
+                              ),
+                            ),
+                          )
+                        : Container(),
                   ),
                 ],
               ),
