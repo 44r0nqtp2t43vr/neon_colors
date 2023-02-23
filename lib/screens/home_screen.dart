@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:neon_colors/constants.dart';
 import 'package:neon_colors/data.dart';
+import 'package:neon_colors/screens/watch_screen.dart';
 import 'package:neon_colors/widgets/home_navbar.dart';
 import 'package:neon_colors/widgets/masked_image.dart';
 import 'package:neon_colors/widgets/search_bar.dart';
@@ -28,6 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
               width: double.infinity,
               color: kColorBackground,
               child: Stack(
+                alignment: Alignment.center,
                 children: [
                   Positioned(
                     left: -111,
@@ -98,6 +100,28 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                   ),
+                  Positioned(
+                    bottom: 40,
+                    child: Container(
+                      height: 60.0,
+                      width: 60.0,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: kColorNeonCyan.withOpacity(0.8),
+                      ),
+                      child: BackdropFilter(
+                        filter: ImageFilter.blur(
+                          sigmaX: 40.0,
+                          sigmaY: 40.0,
+                        ),
+                        child: Container(
+                          height: 60.0,
+                          width: 60.0,
+                          color: Colors.transparent,
+                        ),
+                      ),
+                    ),
+                  ),
                   CustomScrollView(
                     physics: const BouncingScrollPhysics(
                       parent: AlwaysScrollableScrollPhysics(),
@@ -152,6 +176,18 @@ class _HomeScreenState extends State<HomeScreen> {
                                         ? const EdgeInsets.only(left: 20.0)
                                         : const EdgeInsets.all(0),
                                     child: GestureDetector(
+                                      onTap: () {
+                                        if (newMovieItems[index]["details"] !=
+                                            null) {
+                                          Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) =>
+                                                  WatchScreen(),
+                                            ),
+                                          );
+                                        }
+                                      },
                                       child: SizedBox(
                                         height: 160.0,
                                         width: 144.0,
@@ -225,7 +261,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ],
                   ),
-                  Positioned(
+                  const Positioned(
                     bottom: 0,
                     child: HomeNavigationBar(),
                   ),

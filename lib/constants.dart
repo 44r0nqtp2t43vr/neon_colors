@@ -20,12 +20,15 @@ const String kIconSearch = 'assets/icons/icon_search.svg';
 const String kIconMicrophone = 'assets/icons/icon_microphone.svg';
 
 // images
-const String kMovieSpiderman = 'assets/images/poster_spiderman.png';
-const String kMovieMatrix = 'assets/images/poster_matrix.png';
-const String kMovieEternals = 'assets/images/poster_eternals.png';
-const String kMovieAquaman = 'assets/images/poster_aquaman.png';
-const String kMovieBatman = 'assets/images/poster_batman.png';
-const String kMovieSonic = 'assets/images/poster_sonic.png';
+const String kPosterSpiderman = 'assets/images/poster_spiderman.png';
+const String kPosterMatrix = 'assets/images/poster_matrix.png';
+const String kPosterEternals = 'assets/images/poster_eternals.png';
+const String kPosterAquaman = 'assets/images/poster_aquaman.png';
+const String kPosterBatman = 'assets/images/poster_batman.png';
+const String kPosterSonic = 'assets/images/poster_sonic.png';
+
+// big images
+const String kPoster2Eternals = 'assets/images/posterbig_eternals.png';
 
 // masks
 const String kMaskFirst = 'assets/masks/mask_first.png';

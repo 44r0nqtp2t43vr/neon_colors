@@ -10,30 +10,38 @@ List<Widget> onboardingScreenItems = [
 
 List<Map<String, dynamic>> newMovieItems = [
   {
-    "poster": kMovieSpiderman,
+    "poster": kPosterSpiderman,
     "alignment": Alignment.center,
+    "details": null,
   },
   {
-    "poster": kMovieMatrix,
+    "poster": kPosterMatrix,
     "alignment": Alignment.center,
+    "details": null,
   },
   {
-    "poster": kMovieEternals,
+    "poster": kPosterEternals,
     "alignment": Alignment.bottomCenter,
+    "details": {
+      "poster": kPoster2Eternals,
+    },
   },
 ];
 
 List<Map<String, dynamic>> upcMovieItems = [
   {
-    "poster": kMovieAquaman,
+    "poster": kPosterAquaman,
     "alignment": Alignment.topLeft,
+    "details": null,
   },
   {
-    "poster": kMovieBatman,
+    "poster": kPosterBatman,
     "alignment": Alignment.center,
+    "details": null,
   },
   {
-    "poster": kMovieSonic,
+    "poster": kPosterSonic,
     "alignment": Alignment.center,
+    "details": null,
   },
 ];

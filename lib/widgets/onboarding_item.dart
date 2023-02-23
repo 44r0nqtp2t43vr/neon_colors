@@ -128,14 +128,14 @@ class OnboardingItem extends StatelessWidget {
                       padding: EdgeInsets.zero,
                       radius: const Radius.circular(169),
                       child: SizedBox(
-                        width: 338,
-                        height: 338,
+                        width: 338.0,
+                        height: 338.0,
                         child: Center(
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(164.0),
                             child: Container(
-                              width: 328,
-                              height: 328,
+                              width: 328.0,
+                              height: 328.0,
                               padding: const EdgeInsets.only(top: 55.0),
                               child: Image.asset(
                                 'assets/images/onboarding.png',
@@ -181,6 +181,7 @@ class OnboardingItem extends StatelessWidget {
                   Positioned(
                     bottom: 117,
                     child: OutlineGradientButton(
+                      onTap: () {},
                       gradient: LinearGradient(
                         colors: [
                           kColorNeonPink,
