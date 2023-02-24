@@ -182,8 +182,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                           Navigator.push(
                                             context,
                                             MaterialPageRoute(
-                                              builder: (context) =>
-                                                  WatchScreen(),
+                                              builder: (context) => WatchScreen(
+                                                details: newMovieItems[index]
+                                                    ["details"],
+                                              ),
                                             ),
                                           );
                                         }

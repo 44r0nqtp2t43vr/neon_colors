@@ -75,7 +75,7 @@ class HomeNavigationBar extends StatelessWidget {
                             child: GestureDetector(
                               onTap: () {},
                               child: Align(
-                                alignment: Alignment.centerLeft,
+                                alignment: Alignment.topLeft,
                                 child: SvgPicture.asset(kIconHome),
                               ),
                             ),
@@ -84,7 +84,7 @@ class HomeNavigationBar extends StatelessWidget {
                             child: GestureDetector(
                               onTap: () {},
                               child: Align(
-                                alignment: Alignment.bottomRight,
+                                alignment: Alignment.topRight,
                                 child: SvgPicture.asset(kIconMovie),
                               ),
                             ),
@@ -110,23 +110,19 @@ class HomeNavigationBar extends StatelessWidget {
                       height: 60.0,
                       child: Center(
                         child: Container(
-                          height: 52.0,
-                          width: 52.0,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             gradient: LinearGradient(
                               begin: Alignment.topLeft,
                               end: Alignment.bottomRight,
                               colors: [
-                                kColorNeonPink.withOpacity(0.2),
-                                kColorNeonCyan.withOpacity(0.2),
+                                kColorNeonPink.withOpacity(0.15),
+                                kColorNeonCyan.withOpacity(0.15),
                               ],
                             ),
                           ),
                           child: Center(
                             child: Container(
-                              height: 52.0,
-                              width: 52.0,
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
                                 color:
@@ -164,7 +160,7 @@ class HomeNavigationBar extends StatelessWidget {
                             child: GestureDetector(
                               onTap: () {},
                               child: Align(
-                                alignment: Alignment.bottomLeft,
+                                alignment: Alignment.topLeft,
                                 child: SvgPicture.asset(kIconBrowse),
                               ),
                             ),
@@ -173,7 +169,7 @@ class HomeNavigationBar extends StatelessWidget {
                             child: GestureDetector(
                               onTap: () {},
                               child: Align(
-                                alignment: Alignment.bottomRight,
+                                alignment: Alignment.topRight,
                                 child: SvgPicture.asset(kIconDownload),
                               ),
                             ),
@@ -184,6 +180,28 @@ class HomeNavigationBar extends StatelessWidget {
                   ),
                 ],
               ),
+            ),
+          ),
+          SizedBox(
+            height: 92.0,
+            child: Stack(
+              alignment: Alignment.center,
+              children: [
+                Positioned(
+                  top: -14.0,
+                  child: Container(
+                    height: 72,
+                    width: 72,
+                    decoration: BoxDecoration(
+                      color: Colors.transparent,
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: const Color(0xffffffff).withOpacity(0.3),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
           Positioned(

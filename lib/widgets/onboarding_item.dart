@@ -138,7 +138,7 @@ class OnboardingItem extends StatelessWidget {
                               height: 328.0,
                               padding: const EdgeInsets.only(top: 55.0),
                               child: Image.asset(
-                                'assets/images/onboarding.png',
+                                kImageOnboarding,
                                 alignment: Alignment.bottomLeft,
                                 fit: BoxFit.cover,
                               ),

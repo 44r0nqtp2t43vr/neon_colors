@@ -26,9 +26,16 @@ const String kPosterEternals = 'assets/images/poster_eternals.png';
 const String kPosterAquaman = 'assets/images/poster_aquaman.png';
 const String kPosterBatman = 'assets/images/poster_batman.png';
 const String kPosterSonic = 'assets/images/poster_sonic.png';
+const String kImageAngelinaJolie = 'assets/images/cast_angelinajolie.png';
+const String kImageGemmaChan = 'assets/images/cast_gemmachan.png';
+const String kImageSalmaHayek = 'assets/images/cast_salmahayek.png';
+const String kImageRichardMadden = 'assets/images/cast_richardmadden.png';
 
 // big images
 const String kPoster2Eternals = 'assets/images/posterbig_eternals.png';
+
+// onboarding image
+const String kImageOnboarding = 'assets/images/onboarding.png';
 
 // masks
 const String kMaskFirst = 'assets/masks/mask_first.png';
