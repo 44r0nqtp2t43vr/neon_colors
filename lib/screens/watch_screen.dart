@@ -39,9 +39,9 @@ class WatchScreen extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    top: 0,
+                    top: 340,
                     child: Container(
-                      height: MediaQuery.of(context).size.height,
+                      height: MediaQuery.of(context).size.height - 340,
                       width: MediaQuery.of(context).size.width,
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
@@ -52,7 +52,7 @@ class WatchScreen extends StatelessWidget {
                             const Color(0xff000000),
                             kColorBackground
                           ],
-                          stops: const [0.475, 0.535, 1],
+                          stops: const [0.1, 0.2, 1],
                         ),
                       ),
                     ),
